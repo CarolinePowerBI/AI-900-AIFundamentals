@@ -3,52 +3,36 @@ lab:
     title: 'Explore face recognition​'
 ---
 
-# Explore face recognition
+# Explore face detection
 
 > **Note**
 > To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
 
 Computer vision solutions often require an artificial intelligence (AI) solution to be able to detect human faces. For example, suppose the retail company Northwind Traders wants to locate where customers are standing in a store to best assist them. One way to accomplish this is to determine if there are any faces in the images, and if so, to identify the bounding box coordinates around the faces.
 
-To test the capabilities of the Face service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
+To test the capabilities of the Face service, you'll use Azure Vision Studio. This is a UI-based platform that lets you explore Azure AI Vision features, without needing to write any code. 
 
-## Create a *Face API* resource
+## Get started with Azure Vision Studio 
 
-You can use the Face service by creating a **Face** resource.
+1. Open the [Azure Vision Studio](https://portal.vision.cognitive.azure.com). If you are not already logged in, select **Sign In** on the top menu, and use the email and password associated with your Azure subscription. 
+1. Before you can use the studio, you need to associate it with an Azure AI services resource. On the rop right of the screen, click the **Settings** icon.
 
-If you haven't already done so, create a **Face API** resource in your Azure subscription.
+    ![Azure Vision Studio](media/content-safety/settings-toggle.png)
 
-1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with your Microsoft account.
-
-1. Click the **&#65291;Create a resource** button, search for *Face*, and create a **Face** resource with the following settings:
+1. Under *Select a resource to work with* click **Create a new resource**. 
+1. Create the new resource with the following settings:
+    - **Name**: *Enter a unique name*.
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: *Select or create a resource group with a unique name*.
-    - **Region**: *Choose any available region*.
-    - **Name**: *Enter a unique name*.
-    - **Pricing tier**: Free F0
+    - **Resource type**: Do not change
+    - **Location**: *Choose any available region*.
+    - **Price tier**: F0
 
-1. Review and create the resource, and wait for deployment to complete. Then go to the deployed resource.
+1. Select **Review + create** then **Create** and wait for deployment to complete.
+1. 
 
-1. View the **Keys and Endpoint** page for your Face resource. You will need the endpoint and keys to connect from client applications.
-
-## Run Cloud Shell
-
-To test the capabilities of the Face service, we'll use a simple command-line application that runs in the Cloud Shell on Azure. 
-
-1. In the Azure portal, select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal. 
-
-    ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/create-face-solutions/powershell-portal-guide-1.png)
-
-1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.  
-
-1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is specified and select **Create storage**. Then wait a minute or so for the storage to be created.
-
-    ![Create storage by clicking confirm.](media/create-face-solutions/powershell-portal-guide-2.png)       
-
-1. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu.
-
-    ![How to find the left hand drop down menu to switch to PowerShell](media/create-face-solutions/powershell-portal-guide-3.png) 
-
+*Congratulations! You have successfully assoc
+2. 
 1. Wait for PowerShell to start. You should see the following screen in the Azure portal:  
 
     ![Wait for PowerShell to start.](media/create-face-solutions/powershell-prompt.png)
